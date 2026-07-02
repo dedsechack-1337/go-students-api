@@ -37,7 +37,7 @@ func New() http.HandlerFunc {
 			return
 		}
 
-		slog.Info("Creting a Student")
+		slog.Info("Creting a Students")
 		response.WriteJson(w, http.StatusCreated, map[string]string{"success": "OK"})
 	}
 }
