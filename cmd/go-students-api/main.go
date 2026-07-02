@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/dedsechack-1337/go-students-api/internal/config"
+	"github.com/dedsechack-1337/go-students-api/internal/http/handlers/student"
 )
 
 func main() {
@@ -20,9 +21,7 @@ func main() {
 	//database setup
 	//setup router
 	router := http.NewServeMux()
-	router.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("welcome to dedsec API"))
-	})
+	router.HandleFunc("POST /api/students", student.New())
 	//setup server
 
 	server := http.Server{
