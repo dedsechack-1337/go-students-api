@@ -15,7 +15,7 @@ A lightweight REST API for managing student records, built with **Go's standard 
 
 ## Tech Stack
 
-| Component     | Library                                                        |
+| Component     | Library                                                        ||
 |---------------|-----------------------------------------------------------------|
 | HTTP router   | `net/http` (Go 1.22+ method/pattern routing)                    |
 | Database      | [`mattn/go-sqlite3`](https://github.com/mattn/go-sqlite3)        |
